@@ -4,7 +4,11 @@
   "description": "An implementation of Conway's Game of Life using React",
   "main": "dist/bundle.js",
   "scripts": {
-    "build": "webpack && node-sass src/styles/app.scss dist/app.css",
+    "build": "npm run build:js && npm run build:css && npm run copy:react && npm run copy:react-dom",
+    "build:css": "node-sass src/styles/app.scss dist/app.css",
+    "build:js": "webpack",
+    "copy:react": "cp node_modules/react/dist/react.min.js dist",
+    "copy:react-dom": "cp node_modules/react-dom/dist/react-dom.min.js dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
