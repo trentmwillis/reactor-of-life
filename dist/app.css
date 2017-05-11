@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 606px;
+  margin: 0; }
+
+.reactor-of-life {
+  text-align: center; }
+  .reactor-of-life > button {
+    border: 0;
+    background: #00dbde;
+    border-radius: 2px;
+    font-size: 100%;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem; }
+
+.title {
+  color: #444;
+  font-family: sans-serif;
+  font-size: 100%;
+  margin: 1rem 0; }
+
+.title > a {
+  color: #00dbde;
+  text-decoration: none; }
+  .title > a:hover, .title > a:focus {
+    text-decoration: underline; }
+
+.world {
+  border-spacing: 2px; }
+
+.citizen {
+  float: left;
+  margin: 1px;
+  width: 4px;
+  height: 4px; }
+  .citizen:nth-child(100n + 1) {
+    clear: both; }
+
+.citizen.alive {
+  background-color: #00dbde; }
+
+.citizen.dead {
+  background-color: transparent; }
